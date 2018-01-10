@@ -1,0 +1,10 @@
+applications:
+- name: validationApp
+  instances: 1
+  disk_quota: 768M
+  memory: 768M 
+#   routes:
+#   - route: <host>.cfapps.us10.hana.ondemand.com
+  random-route: true
+  path: target\validationApp-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
